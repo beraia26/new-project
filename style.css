@@ -1,0 +1,235 @@
+/* მთლიანი გვერდი */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ზედა მენიუ */
+header {
+    background-color: #151522;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #a855f7;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+/* მთავარი ნაწილი */
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #17102b, #0b0b12);
+}
+
+#home h2 {
+    color: #a855f7;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* თამაშების სექცია */
+#games {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.game {
+    display: inline-block;
+    background-color: #191927;
+    padding: 30px;
+    margin: 15px;
+    width: 250px;
+    border: 1px solid #a855f7;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.game:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #a855f7;
+}
+
+.game h3 {
+    color: #a855f7;
+    margin-bottom: 15px;
+}
+
+/* სიახლეები და კონტაქტი */
+#news, #contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#news h2, #contact h2 {
+    color: #a855f7;
+    margin-bottom: 20px;
+}
+
+/* ქვედა ნაწილი */
+footer {
+    background-color: #151522;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}.game img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.game button {
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.game button:hover {
+    background-color: #7e22ce;
+    box-shadow: 0 0 15px #a855f7;
+}/* GAMING NEWS */
+
+#news {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+#news h2 {
+    color: #a855f7;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.news-subtitle {
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.news-card {
+    background: #191927;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #a855f7;
+    border-radius: 12px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #a855f7;
+}
+
+.news-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-card span {
+    display: inline-block;
+    color: #c084fc;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.news-card h3 {
+    margin: 12px 0;
+    color: white;
+}
+
+.news-card p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+.news-card button {
+    background: #a855f7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.news-card button:hover {
+    background: #7e22ce;
+}/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    .games-container,
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game,
+    .news-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+    text-shadow: 0 0 10px #a855f7;
+}
